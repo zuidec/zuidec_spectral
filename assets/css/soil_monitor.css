@@ -1,0 +1,48 @@
+.monitor-wrapper    {
+    background-color: #21b2a6;
+    opacity: 1;
+    border-radius: 3px;
+    padding: 0;
+    margin: 0;
+}
+
+.moisture-indicator {
+    box-shadow: none;
+    border: 1px solid 2e3842;
+    opacity: 1.0;
+    color: white !important;
+    vertical-align: baseline;
+    margin-top: inherit;
+    margin-bottom: 0;
+    margin-top: inherit;
+    margin-right: 0;
+    margin-left: 1.5em;
+}
+
+.timestamp  {
+    opacity: 1.0;
+}
+
+.monitor-image {
+    opacity: 1.0;
+}
+
+.monitor-data   {
+    border-radius: 0;
+    position: relative;
+    padding-bottom: 0.5em;
+}
+
+.monitor-data p   {
+    margin: 0.5em;
+    color: white;
+    vertical-align: middle;
+}
+
+.nomargin  {
+    margin: 0 !important;
+}   
+
+.monitor-date {
+    margin-top: 0;
+}
