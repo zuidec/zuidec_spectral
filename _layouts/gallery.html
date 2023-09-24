@@ -1,0 +1,461 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    {% include head.html %}
+    <body class="landing">
+        {% include header.html %}
+        <article id="main">
+        <header{% if page.image %} style="background-image: url('{% if site.featured-image-source %}{{ page.image | prepend: site.featured-image-source | absolute_url }}{% else %}{{ "" | absolute_url }}/assets/images/{{ page.image }}{% endif %}');"{% endif %}>
+            <h2>{{ page.title }}</h2>
+            <p>{{ page.description }}</p>
+        </header>
+        
+        {{content}}
+        <section class="wrapper style5">
+            <div class="inner">
+                    <div class="16u">
+            <!-- Carousel wrapper -->
+            <div
+              id="hellscanyon"
+              class="carousel slide carousel-fade"
+              data-mdb-ride="carousel"
+            >
+                  <!-- Inner -->
+                  <div class="carousel-inner">
+                    <!-- Single item -->
+                    <div class="carousel-item active">
+                      <img
+                        src="assets/images/hells_canyon_grass.jpg"
+                        class="d-block w-100"
+                        alt=""
+                      />
+                      <div class="carousel-caption d-none d-md-block">
+                          <h5 style="color: white">Hells Canyon</h5>
+                      </div>
+                </div>
+                <!-- Single item -->
+                <div class="carousel-item">
+                      <img
+                        src="assets/images/hells_canyon_kirkwood.jpg"
+                        class="d-block w-100"
+                        alt=""
+                      />
+                      <div class="carousel-caption d-none d-md-block">
+                          <h5 style="color: white">Hells Canyon</h5>
+                      </div>
+                </div>
+                 <!-- Single item -->
+                <div class="carousel-item">
+                    <img
+                      src="assets/images/hellscanyon.jpg"
+                      class="d-block w-100"
+                      alt=""
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="color: white">Hells Canyon</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img
+                      src="assets/images/pittsburgh_landing.jpg"
+                      class="d-block w-100"
+                      alt=""
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="color: white">Hells Canyon</h5>
+                    </div>
+                </div>       
+            </div>
+              <!-- Inner -->
+                <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-mdb-target="#hellscanyon"
+                  data-mdb-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-mdb-target="#hellscanyon"
+                  data-mdb-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+               <button
+                  type="button"
+                  data-mdb-target="#hellscanyon"
+                  data-mdb-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+                <button
+                  type="button"
+                  data-mdb-target="#hellscanyon"
+                  data-mdb-slide-to="3"
+                  aria-label="Slide 4"
+                ></button>
+            </div>
+              <!-- Controls -->
+            <button
+                class="carousel-control-prev"
+                type="button"
+                style="box-shadow:none; border:none"
+                data-mdb-target="#hellscanyon"
+                data-mdb-slide="prev"
+              >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                style="box-shadow:none; border:none"
+                data-mdb-target="#hellscanyon"
+                data-mdb-slide="next"
+              >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+                </div>
+            </div>
+            </section>
+            
+<!---------------------------------------------------------------------------->
+<section class="wrapper special style2">
+    <div class="inner">
+    <div class="16u">
+        <!-- Carousel wrapper -->
+        <div
+          id="glacier"
+          class="carousel slide carousel-fade"
+          data-mdb-ride="carousel"
+        >
+          <!-- Inner -->
+            <div class="carousel-inner">
+                <!-- Single item -->
+                <div class="carousel-item active">
+                      <img
+                        src="assets/images/glacier_marten.jpg"
+                        class="d-block w-100"
+                        alt=""
+                      />
+                      <div class="carousel-caption d-none d-md-block">
+                          <h5 style="color: white">Glacier National Park</h5>
+                      </div>
+                </div>
+                  <div class="carousel-item">
+                      <img
+                        src="assets/images/glacier_lake.jpg"
+                        class="d-block w-100"
+                        alt=""
+                      />
+                      <div class="carousel-caption d-none d-md-block">
+                          <h5 style="color: white">Glacier National Park</h5>
+                      </div>
+                </div>
+                  <div class="carousel-item">
+                      <img
+                        src="assets/images/glacier_stream.jpg"
+                        class="d-block w-100"
+                        alt=""
+                      />
+                      <div class="carousel-caption d-none d-md-block">
+                          <h5 style="color: white">Glacier National Park</h5>
+                      </div>
+                </div>
+            </div>
+            <!-- Inner -->
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button
+                      type="button"
+                      data-mdb-target="#glacier"
+                      data-mdb-slide-to="0"
+                      class="active"
+                      aria-current="true"
+                      aria-label="Slide 1"
+                ></button>
+                <button
+                      type="button"
+                      data-mdb-target="#glacier"
+                      data-mdb-slide-to="1"
+                      aria-label="Slide 2"
+                ></button>
+                <button
+                      type="button"
+                      data-mdb-target="#glacier"
+                      data-mdb-slide-to="2"
+                      aria-label="Slide 3"
+                ></button>
+            </div>
+            <!-- Controls -->
+            <button
+                class="carousel-control-prev"
+                type="button"
+                style="box-shadow:none; border:none"
+                data-mdb-target="#glacier"
+                data-mdb-slide="prev"
+            >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+                class="carousel-control-next"
+                type="button"
+                style="box-shadow:none; border:none"
+                data-mdb-target="#glacier"
+                data-mdb-slide="next"
+            >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+<!---------------------------------------------------------------------------->
+<section class="wrapper style1 special">
+    <div class="inner">
+    <div class="16u">
+    <!-- Carousel wrapper -->
+        <div
+          id="europe"
+          class="carousel slide carousel-fade"
+          data-mdb-ride="carousel"
+        >
+          <!-- Inner -->
+          <div class="carousel-inner">
+            <!-- Single item -->
+            <div class="carousel-item active">
+              <img
+                src="assets/images/sankt_moritz.jpg"
+                class="d-block w-100"
+                alt=""
+              />
+              <div class="carousel-caption d-none d-md-block">
+                  <h5 style="color: white">St. Mortiz, Switzerland</h5>
+              </div>
+            </div>
+            <!-- Single item -->
+            <div class="carousel-item">
+              <img
+                src="assets/images/matterhorn.jpg"
+                class="d-block w-100"
+                alt=""
+              />
+              <div class="carousel-caption d-none d-md-block">
+                  <h5 style="color: white">Zermatt, Switzerland</h5>
+              </div>
+            </div>
+            <!-- Single item -->
+            <div class="carousel-item">
+              <img
+                src="assets/images/innsbruck.jpg"
+                class="d-block w-100"
+                alt=""
+              />
+              <div class="carousel-caption d-none d-md-block">
+                  <h5 style="color: white">Innsbruck, Austria</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/images/paragliding.JPG"
+                class="d-block w-100"
+                alt=""
+              />
+              <div class="carousel-caption d-none d-md-block">
+                  <h5 style="color: white">Innsbruck, Austria</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/images/vakantiepark_timmerholt.jpg"
+                class="d-block w-100"
+                alt=""
+              />
+              <div class="carousel-caption d-none d-md-block">
+                  <h5 style="color: white">Drenthe, Netherlands</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Inner -->
+            <!-- Indicators -->
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-mdb-target="#europe"
+              data-mdb-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-mdb-target="#europe"
+              data-mdb-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-mdb-target="#europe"
+              data-mdb-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-mdb-target="#europe"
+              data-mdb-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-mdb-target="#europe"
+              data-mdb-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+          </div>
+          <!-- Controls -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            style="box-shadow:none; border:none"
+            data-mdb-target="#europe"
+            data-mdb-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            style="box-shadow:none; border:none"
+            data-mdb-target="#europe"
+            data-mdb-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+    </div>
+</section>
+        <!---------------------------------------------------------------------------->
+        <section class="wrapper style5">
+            <div class="inner">
+                <div class="16u">
+                <!-- Carousel wrapper -->
+                    <div
+                      id="food"
+                      class="carousel slide carousel-fade"
+                      data-mdb-ride="carousel"
+                    >        <!-- Indicators -->
+                        <div class="carousel-indicators">
+                          <button
+                            type="button"
+                            data-mdb-target="#food"
+                            data-mdb-slide-to="0"
+                            class="active"
+                            aria-current="true"
+                            aria-label="Slide 1"
+                          ></button>
+                          <button
+                            type="button"
+                            data-mdb-target="#food"
+                            data-mdb-slide-to="1"
+                            aria-label="Slide 2"
+                          ></button>
+                          <button
+                            type="button"
+                            data-mdb-target="#food"
+                            data-mdb-slide-to="2"
+                            aria-label="Slide 3"
+                          ></button>
+                          <button
+                            type="button"
+                            data-mdb-target="#food"
+                            data-mdb-slide-to="3"
+                            aria-label="Slide 4"
+                          ></button>
+                          <button
+                            type="button"
+                            data-mdb-target="#food"
+                            data-mdb-slide-to="4"
+                            aria-label="Slide 5"
+                          ></button>
+                        </div>
+          <!-- Inner -->
+                        <div class="carousel-inner">
+                            <!-- Single item -->
+                            <div class="carousel-item active">
+                              <img
+                                src="assets/images/nutella_cake.jpg"
+                                class="d-block w-100"
+                                alt=""
+                              />
+                            </div>
+                            <!-- Single item -->
+                            <div class="carousel-item">
+                              <img
+                                src="assets/images/strawberry_cake.jpg"
+                                class="d-block w-100"
+                                alt=""
+                              />
+                            </div>
+                            <!-- Single item -->
+                            <div class="carousel-item">
+                              <img
+                                src="assets/images/pumpkin_cupcakes.jpg"
+                                class="d-block w-100"
+                                alt=""
+                              />
+                            </div>
+                            <div class="carousel-item">
+                              <img
+                                src="assets/images/blue_cupcakes.jpg"
+                                class="d-block w-100"
+                                alt=""
+                              />
+                            </div>
+                                <div class="carousel-item">
+                              <img
+                                src="assets/images/coffee_cupcakes.jpg"
+                                class="d-block w-100"
+                                alt=""
+                              />
+                            </div>
+                          <!-- Inner -->
+                        </div>
+                        <!-- Controls -->
+                        <button
+                            class="carousel-control-prev"
+                            type="button"
+                            style="box-shadow:none; border:none;"
+                            data-mdb-target="#food"
+                            data-mdb-slide="prev"
+                        >
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                            class="carousel-control-next"
+                            type="button"
+                            style="box-shadow:none; border:none;"
+                            data-mdb-target="#food"
+                            data-mdb-slide="next"
+                        >
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!---------------------------------------------------------------------------->
+        </article>
+        {% include footer.html %}
+    </body>
+</html>
