@@ -3629,10 +3629,10 @@
 
 	#main > header {
 		padding: 12em 0 10em 0 ;
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/banner.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/banner.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/banner.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/banner.jpg");
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/background.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/background.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/background.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/background.jpg");
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -3779,10 +3779,10 @@
 /* Landing */
 
 	body.landing #page-wrapper {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/banner.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/banner.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/banner.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/banner.jpg");
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/background.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/background.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/background.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/background.jpg");
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -3800,10 +3800,10 @@
 
 	body.is-mobile.landing #banner,
 	body.is-mobile.landing .wrapper.style4 {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/banner.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/banner.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/banner.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/banner.jpg");
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/background.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/background.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/background.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/background.jpg");
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -3812,3 +3812,63 @@
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
+	/* Masonry gallery styles*/
+	.gallery-container {
+		width: 700px;
+		column-count: 3;
+		column-gap: 8px;
+		margin: 24px auto;
+	}
+	
+	.gallery-container .image img {
+		width: 100%;
+		vertical-align: middle;
+		transition: all 400ms;
+	}
+	
+	.gallery-container .image {
+		position: relative;
+		margin-bottom: 8px;
+		overflow: hidden;
+	}
+	
+	.gallery-container .image:hover img {
+		transform: scale(1.3);
+	}
+	
+	.gallery-container .image .title {
+		position: absolute;
+		bottom: -60px;
+		left: 0;
+		right: 0;
+		padding: 16px;
+		background: #222;
+		color: #fff;
+		font-weight: bold;
+		opacity: 0;
+		transition: all 400ms;
+	}
+	
+	.gallery-container .image:hover .title {
+		opacity: 1;
+		bottom: 0;
+	}
+/* This is the end of one block*/
+
+/* Stuff for carousel */
+.testimonial-carousel .carousel-control:hover::before {
+    color: white !important;
+}
+
+.testimonial-carousel .carousel-control:hover::after {
+    color: white !important;
+}
+.carousel-inner	{
+	color: white;
+}
+.carousel-indicators{
+	z-index:1; 
+}
+/* End stuff for carousel */
+

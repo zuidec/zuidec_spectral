@@ -1,0 +1,258 @@
+.carousel{
+    position:relative
+}
+.carousel.pointer-event{
+    touch-action:pan-y
+}
+.carousel-inner{
+    position:relative;
+    width:100%;
+    overflow:hidden
+}
+.carousel-inner:after{
+    display:block;
+    clear:both;
+    content:""
+}
+.carousel-item{
+    position:relative;
+    display:none;
+    float:left;
+    width:100%;
+    margin-right:-100%;
+    -webkit-backface-visibility:hidden;
+    backface-visibility:hidden;
+    transition:transform .6s ease-in-out
+}
+@media(prefers-reduced-motion:reduce){
+    .carousel-item{transition:none}
+}
+.carousel-item-next,.carousel-item-prev,.carousel-item.active{
+    display:block
+}
+.active.carousel-item-end,.carousel-item-next:not(.carousel-item-start){
+    transform:translateX(100%)
+}
+.active.carousel-item-start,.carousel-item-prev:not(.carousel-item-end){
+    transform:translateX(-100%)
+}
+.carousel-fade .carousel-item{
+    opacity:0;
+    transition-property:opacity;
+    transform:none
+}
+.carousel-fade .carousel-item-next.carousel-item-start,.carousel-fade .carousel-item-prev.carousel-item-end,.carousel-fade .carousel-item.active{
+    z-index:1;
+    opacity:1
+}
+.carousel-fade .active.carousel-item-end,.carousel-fade .active.carousel-item-start{
+    z-index:0;
+    opacity:0;
+    transition:opacity 0s .6s
+}
+@media(prefers-reduced-motion:reduce){
+    .carousel-fade .active.carousel-item-end,.carousel-fade .active.carousel-item-start{transition:none}
+}
+.carousel-control-next,.carousel-control-prev{
+    position:absolute;
+    top:50%;
+    bottom:0;
+    z-index:1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:15%;
+    padding:0;
+    color:#fff;
+    text-align:center;
+    background:none;
+    border:0;
+    opacity:0.95;
+    transition:opacity .15s ease
+}
+@media(prefers-reduced-motion:reduce){
+    .carousel-control-next,
+    .carousel-control-prev{transition:none}
+}
+.carousel-control-next:focus,.carousel-control-next:hover,.carousel-control-prev:focus,.carousel-control-prev:hover{
+    color:#fff;
+    text-decoration:none;
+    outline:0;
+    opacity:0.95;
+    border:none;
+}
+.carousel-control-prev{
+    left:0;
+    color: white;
+    border:none;
+}
+.carousel-control-next{
+    right:0;
+    color:white;
+    border:none;
+}
+.carousel-control-next-icon,.carousel-control-prev-icon{
+    display:inline-block;
+    width:2rem;
+    height:2rem;
+    background-repeat:no-repeat;
+    background-position:50%;
+    background-size:100% 100%;
+    color:white;
+    border:none;
+}
+/*!rtl:options:{
+    "autoRename": true,
+    "stringMap":[ {
+      "name"    : "prev-next",
+      "search"  : "prev",
+      "replace" : "next"
+    } ]
+  }*/
+.carousel-control-next-icon,.carousel-control-prev-icon{
+    background-image:none;
+    color:white;
+    border:none;
+}
+  
+.carousel-indicators{
+    position:absolute;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index:2;
+    display:flex;
+    justify-content:center;
+    padding:0;
+    margin-right:15%;
+    margin-bottom:1rem;
+    margin-left:15%;
+    list-style:none
+}       
+.carousel-indicators [data-mdb-target]{
+    box-sizing:content-box;
+    flex:0 1 auto;
+    width:30px;
+    height:3px;
+    padding:0;
+    margin-right:3px;
+    margin-left:3px;
+    text-indent:-999px;
+    cursor:pointer;
+    background-color:#fff;
+    background-clip:padding-box;
+    border:0;
+    border-top:10px solid transparent;
+    border-bottom:10px solid transparent;
+    opacity:.5;
+    transition:opacity .6s ease
+}
+@media(prefers-reduced-motion:reduce){
+    .carousel-indicators [data-mdb-target]{transition:none}
+}
+.carousel-indicators .active{
+    opacity:1
+}
+.carousel-caption{
+    position:absolute;
+    right:15%;
+    bottom:1.25rem;
+    left:15%;
+    padding-top:1.25rem;
+    padding-bottom:1.25rem;
+    color:#fff;
+    text-align:center
+}
+.carousel-dark .carousel-control-next-icon,.carousel-dark .carousel-control-prev-icon{
+    filter:invert(1) grayscale(100)
+}
+.carousel-dark .carousel-indicators [data-mdb-target]{
+    background-color:#000
+}
+.carousel-dark .carousel-caption{
+    color:#000
+}
+.carousel-control-prev-icon:after{
+    content:""
+}
+.carousel-control-next-icon:after,.carousel-control-prev-icon:after{
+    --mdb-carousel-control-icon-font-size:1.7rem;
+    --mdb-carousel-control-icon-font-weight:700;
+    font-weight:var(--mdb-carousel-control-icon-font-weight);
+    font-size:var(--mdb-carousel-control-icon-font-size);
+    font-family:Font Awesome\ 6 Pro,Font Awesome\ 6 Free;
+    color:white;
+    border:none;
+}
+.carousel-control-next-icon:after{
+    content:""
+}
+.d-block{
+    display:block!important
+}
+.w-100{
+    width:100%!important
+}
+.d-none{
+    display:none!important
+}
+.d-md-block{
+    display:block!important
+}
+.active{
+    border:none;
+    border-radius:var(--mdb-list-group-light-active-border-radius);
+    background-color:var(--mdb-list-group-light-active-bg);
+    color:var(--mdb-list-group-light-active-color)
+}
+.active>.page-link,.page-link.active{
+    z-index:3;
+    color:var(--mdb-pagination-active-color);
+    background-color:var(--mdb-pagination-active-bg);
+    border-color:var(--mdb-pagination-active-border-color)
+}
+.active>.page-link,.page-link.active{
+    border:0;
+    box-shadow:var(--mdb-pagination-active-box-shadow);
+    transition:var(--mdb-pagination-active-transition);
+    font-weight:var(--mdb-pagination-active-font-weight)
+}
+.visually-hidden,.visually-hidden-focusable:not(:focus):not(:focus-within){
+    position:absolute!important;
+    width:1px!important;
+    height:1px!important;
+    padding:0!important;
+    margin:-1px!important;
+    overflow:hidden!important;
+    clip:rect(0,0,0,0)!important;
+    white-space:nowrap!important;
+    border:0!important
+}
+button{
+    border-radius:0;
+    border:none;
+}
+button:focus:not(:focus-visible){
+    outline:0;
+    border:none;
+}
+button,input,optgroup,select,textarea{
+    margin:0;
+    font-family:inherit;
+    font-size:inherit;
+    line-height:inherit;
+    border:none;
+}
+button,select{
+    text-transform:none;
+    border:none;
+}
+[role=button]{
+    cursor:pointer
+}
+[type=button],[type=reset],[type=submit],button{
+    -webkit-appearance:button
+}
+[type=button]:not(:disabled),[type=reset]:not(:disabled),[type=submit]:not(:disabled),button:not(:disabled){
+    cursor:pointer
+}
