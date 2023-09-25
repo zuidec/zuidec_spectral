@@ -26,3 +26,6 @@ twitter_url:
 
 # Build settings
 markdown: kramdown
+exclude: 
+  - start-server
+  - spectral_jekyll_theme.gemspec
