@@ -11,7 +11,7 @@ ini_set('display_errors', 1);
 header('Content-Type: application/json');
 
 // Set up database parameters
-$DB_HOST = "localhost";
+$DB_HOST = "127.0.0.1";
 $DB_USERNAME = "casetoph_soil_monitor";
 $DB_PASSWORD = "Jonagu25!!";
 $DB_NAME = "casetoph_soil_data";

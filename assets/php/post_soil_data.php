@@ -9,7 +9,7 @@
 date_default_timezone_set("America/Los_Angeles");		// Set timezone to PST
 
 // Set up database parameters
-$servername = "localhost";
+$servername = "127.0.0.1";
 $username = "casetoph_soil_monitor";
 $password = "Jonagu25!!";
 $dbname = "casetoph_soil_data";

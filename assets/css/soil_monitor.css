@@ -49,3 +49,75 @@
 .monitor-date {
     margin-top: 0;
 }
+@media screen and (max-width:1039px) {
+
+    .moisture-indicator button, 
+    input[type="submit"],
+    input[type="reset"],
+    input[type="button"],
+    button,
+    .button {
+        height: 2.5em;
+        line-height: 2.5em;
+    }
+
+    .moisture-indicator {
+        box-shadow: none;
+        border: 1px solid 2e3842;
+        opacity: 1.0;
+        color: white !important;
+        vertical-align: baseline;
+        margin-top: inherit;
+        margin-bottom: 0;
+        margin-top: inherit;
+        margin-right: 0;
+        margin-left: 0.5em;
+    }
+
+    .monitor-data p {
+        font-size:10pt;
+    }
+}
+@media screen and (max-width:450px) {
+
+    .moisture-indicator button, 
+    input[type="submit"],
+    input[type="reset"],
+    input[type="button"],
+    button,
+    .button {
+        height: 2.0em;
+        line-height: 2.0em;
+    }
+
+    .moisture-indicator {
+        box-shadow: none;
+        border: 1px solid 2e3842;
+        opacity: 1.0;
+        color: white !important;
+        vertical-align: baseline;
+        margin-top: inherit;
+        margin-bottom: 0;
+        margin-top: inherit;
+        margin-right: inherit;
+        margin-left: inherit;
+    }
+
+    .monitor-data p {
+        font-size:0.8em;
+    }
+}
+
+@media screen and (max-width:849px) {
+    .moisture-indicator {
+        box-shadow: none;
+        border: 1px solid 2e3842;
+        opacity: 1.0;
+        color: white !important;
+
+    }
+    .monitor-data p {
+        text-align: center;
+        
+    }
+}
