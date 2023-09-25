@@ -51,31 +51,20 @@ function updateMonitorDisplay (plantDataArrayIndex)  {
     }
 }
 
-async function getPlantData(j)	{ 
-    // Create the request URL and a make new xhttp object
-    var url = "/assets/php/get_soil_data.php?plantname=" + plantDataArray[j].plantName;
-    var xhttp = new XMLHttpRequest();
-    // This will run once the call is complete
-    xhttp.onload = (e) => {
-        if (xhttp.readyState == 4 && xhttp.status == 200) {
-            // Parse the raw json into an object
-            if(!xhttp.response) {
-                return;
-            }
-            var data = JSON.parse(xhttp.response);
-            // Strip the % from moisture and store the moisture/time 
-            plantDataArray[j].moisture = data.moisture.replace('%','');
-            plantDataArray[j].time = data.time;   
-        }
-        else{
-            console.log(xhttp.res);
-        }
-    };
-    xhttp.timeout = 150;
-    //xhttp.upload.addEventListener("load", queryComplete(xhttp.response, j));
-    // Send the request for the plant
-    xhttp.open("GET", url, true);
-    xhttp.send();   
+function getPlantData(index)	{ 
+   // Query database with relevant plant name to retrieve soil data
+	$.ajax({
+		url: "/assets/php/get_soil_data.php?plantname=" + plantDataArray[index].plantName,
+		method: "GET",
+		async: true,
+		success: function(data)	{
+			// Store the data into the plantDataArray, then update the document with the new data
+			plantDataArray[index].moisture  = data.moisture.replace('%','');
+			plantDataArray[index].time      = data.time;
+            updateMonitorDisplay(index); 	
+		}
+	});
+   
 }
 
 $(document).ready(function(){
@@ -86,13 +75,11 @@ $(document).ready(function(){
 async function main()  {
     // Initialize plant data
     initPlantData();
-    updatePlantData();
-    setInterval(updatePlantData,2500);
-    
+    while(true) {
+    for(var i =0;i<3;i++)    {
+        getPlantData(i);
+        //setInterval(getPlantData,2500);
+    }
+    await sleep (5000);
 }
-function updatePlantData()  {
-    for(var j in plantDataArray)    {
-        getPlantData(j);
-        updateMonitorDisplay(j);
-    }   
 }
