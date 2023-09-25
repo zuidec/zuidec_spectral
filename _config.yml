@@ -4,7 +4,7 @@ email: case@casetopher.me
 description: The Jekyll version of the Spectral theme by HTML5 UP.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
-port: 4893
+
 # Homepage tiles
 tiles-source: posts # accepts "posts" or "pages"
 tiles-count: 3

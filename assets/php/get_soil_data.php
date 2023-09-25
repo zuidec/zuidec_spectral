@@ -1,68 +1,71 @@
-<!DOCTYPE html>
-<html><body>
 <?php
 /*
-  Rui Santos
-  Complete project details at https://RandomNerdTutorials.com/esp32-esp8266-mysql-database-php/
+  PHP script to retrieve data from the soil data database
   
-  Permission is hereby granted, free of charge, to any person obtaining a copy
-  of this software and associated documentation files.
-  
-  The above copyright notice and this permission notice shall be included in all
-  copies or substantial portions of the Software.
+  Case Zuiderveld
+  Last updated 9/24/2023
 */
 
-$servername = "localhost";
+// Turn on errors
+ini_set('display_errors', 1);
+header('Content-Type: application/json');
 
-// REPLACE with your Database name
-$dbname = "soil_data";
-// REPLACE with Database user
-$username = "soil_monitor";
-// REPLACE with Database user password
-$password = "Jonagu25!!";
+// Set up database parameters
+$DB_HOST = "localhost";
+$DB_USERNAME = "casetoph_soil_monitor";
+$DB_PASSWORD = "Jonagu25!!";
+$DB_NAME = "casetoph_soil_data";
+// Create new sql object with database information
+$mysqli = new mysqli($DB_HOST, $DB_USERNAME, $DB_PASSWORD, $DB_NAME);
 
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} 
-
-$sql = "SELECT id, time, moisture FROM phineas_soil ORDER BY id DESC";
-
-echo '<table cellspacing="5" cellpadding="5">
-      <tr> 
-        <td>Time</td> 
-        <td>Moisture level</td>  
-      </tr>';
- 
-if ($result = $conn->query($sql)) {
-    while ($row = $result->fetch_assoc()) {
-        $row_id = $row["ID"];
-    //    $row_sensor = $row["sensor"];
-    //   $row_location = $row["location"];
-    //   $row_value1 = $row["value1"];
-    //   $row_value2 = $row["value2"]; 
-    //   $row_value3 = $row["value3"]; 
-        $row_reading_time = $row["time"];
-        // Uncomment to set timezone to - 1 hour (you can change 1 to any number)
-        //$row_reading_time = date("Y-m-d H:i:s", strtotime("$row_reading_time - 1 hours"));
-    $row_moisture = $row["moisture"];
-        // Uncomment to set timezone to + 4 hours (you can change 4 to any number)
-       // $row_reading_time = date("d-m-y H:i:s", strtotime("$row_reading_time + 4 hours"));
-      
-        echo '<tr> 
-                <td>' . $row_reading_time . '</td> 
-                <td>' . $row_moisture . '</td> 
-              </tr>';
-    }
-    $result->free();
+// Connect to database
+if(!$mysqli) {
+        die("Connection failed: " . $mysqli->error);
+}
+// Check for plant name
+if (isset($_GET['plantname'])) {
+        $plantName = test_input($_GET['plantname']);
+}
+else {
+        die("Invalid plant name");
 }
 
-$conn->close();
-?> 
-</table>
-</body>
-</html>
+// This would be nice to implement, but not working right now
+/*
+$query = sprintf(
+  "SELECT *
+  FROM (
+        SELECT *, ROW_NUMBER() OVER (ORDER BY id) AS rn
+    FROM " . $plantName . "_soil
+  ) AS subquery
+  WHERE rn = 1;")
+  */
 
+// Design the sql query
+$query = sprintf("select time, moisture from " . $plantName . "_soil order by id");
+
+//      Send the query and store in result
+$result = $mysqli->query($query);
+
+// Store each row into array
+$data = array();
+foreach($result as $row){
+        $data[] = $row;
+}
+
+// clean up a bit
+$result->close();
+$mysqli->close();
+$data = end($data);
+// print data to json
+print json_encode($data);
+
+function test_input($data) {
+    // Remove potentially harmful symbols
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
+
+?>

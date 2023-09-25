@@ -18,6 +18,9 @@
     margin-right: 0;
     margin-left: 1.5em;
 }
+.moisture-indicator button {
+    background-color: red;
+}
 
 .timestamp  {
     opacity: 1.0;
