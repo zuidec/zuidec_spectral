@@ -2,12 +2,13 @@
 layout: page-noformatting
 title: About me
 description: Get to know me a little better!
+image: hobo_grove_cedar.jpg
 ---
 <!-- Three -->
 <section id="three" class="wrapper style3 special">
 	<div class="inner">
 		<header class="major">
-			<h2 style="color:#1D2329">Hey, my name is Case Zuiderveld!</h2>
+			<h2 style="color:#1D2329">Hey, my name is Case!</h2>
 			<p style="color:white">Thanks for taking the time to read about me, here's the highlights:</p>
             <h2 style="color:#1D2329; border:none; font-size: 2em">I'm a...</h2>
 		</header>
@@ -34,7 +35,7 @@ description: Get to know me a little better!
 			</li>
 			<li class="icon fa-bicycle">
 				<h3 style="color: #1D2329">Cyclist</h3>
-				<p>Cycling, whether on the mountain, down a gravel road, or around town is my favorite form of transportation.</p>
+				<p>Whether on the mountain, down a gravel road, or around town, bikes are my favorite form of transportation.</p>
 			</li>
 		</ul>
 	</div>
