@@ -3,6 +3,7 @@ layout: page
 title: Plants!
 description: A hand built and coded monitoring system for my houseplants
 soilmonitor: true
+image: soil_monitor/arduino.jpg
 ---
 
 <section>

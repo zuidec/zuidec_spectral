@@ -9,16 +9,17 @@
     <body class="landing">
         {% include header.html %}
         <article id="main">
-        <header{% if page.image %} style="background-image: url('{% if site.featured-image-source %}{{ page.image | prepend: site.featured-image-source | absolute_url }}{% else %}{{ "" | absolute_url }}/assets/images/{{ page.image }}{% endif %}');"{% endif %}>
+        <header style="background-image: url(/assets/images/background-image.jpg)">
             <h2>{{ page.title }}</h2>
             <p>{{ page.description }}</p>
         </header>
         
         {{content}}
-        {%include /gallery/hells_canyon.html %}
-        {%include /gallery/glacier.html %}
-        {%include /gallery/europe.html %}
-        {%include /gallery/food.html %}
+        {% include /gallery/hells_canyon.html %}
+        {% include /gallery/glacier.html %}
+        {% include /gallery/europe.html %}
+        {% include /gallery/food.html %}
+        
         </article>
         {% include footer.html %}
     </body>
