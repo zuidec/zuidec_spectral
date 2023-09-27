@@ -3872,3 +3872,42 @@
 }
 /* End stuff for carousel */
 
+/* Stuff for personal flavor */
+#icon-button-link {
+	text-decoration: none;
+	border-bottom: none !important;
+}
+
+#icon-button:hover {
+	background-color: #2E3842;
+	border-color: rgb(183, 211, 205);
+	opacity: 0.6;
+}
+
+
+.icon-button a:link {
+	text-decoration: none;
+	border-bottom: none !important;
+}
+
+.icon-button a:visited {
+	text-decoration: none;
+	border-bottom: none !important;
+}
+
+.icon-button a:hover {
+	text-decoration: none;
+	border-bottom: none !important;
+}
+
+.icon-button a:active {
+	text-decoration: none;
+	border-bottom: none !important;
+}
+
+.icon-button a {
+	text-decoration: none;
+	border-bottom: none !important;
+}
+
+/* End personal flavor */
