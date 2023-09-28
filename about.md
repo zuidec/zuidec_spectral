@@ -9,7 +9,7 @@ image: hobo_grove_cedar.jpg
 	<div class="inner">
 		<header class="major">
 			<h2 style="color:#1D2329">Hey, my name is Case!</h2>
-			<p style="color:white">Thanks for taking the time to read about me, here's the highlights:</p>
+			<p style="color:white">Thanks for taking the time to read about me,<br> here's the highlights:</p>
             <h2 style="color:#1D2329; border:none; font-size: 2em">I'm a...</h2>
 		</header>
 		<ul class="features">
