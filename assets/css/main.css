@@ -3854,7 +3854,7 @@
 		opacity: 1;
 		bottom: 0;
 	}
-/* This is the end of one block*/
+/* This is the end of stock spectral-theme styles*/
 
 /* Stuff for carousel */
 .testimonial-carousel .carousel-control:hover::before {
@@ -3872,7 +3872,7 @@
 }
 /* End stuff for carousel */
 
-/* Stuff for personal flavor */
+/* Make icon buttons that change when hovered */
 #icon-button-link {
 	text-decoration: none;
 	border-bottom: none !important;
@@ -3910,4 +3910,138 @@
 	border-bottom: none !important;
 }
 
-/* End personal flavor */
+/* End icon buttons */
+
+/* Start about me specific rules*/
+.cv-blocks	{
+	border-radius: 5px;
+	background-color: #3d4747; 
+}
+.cv-blocks h3	{
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom: 1px double #00ffcc;
+	text-align: center;
+	margin: 0.5 0.5em 2em 0.5em
+}
+.cv-blocks ul	{
+	text-align: center;
+	list-style: none;
+	padding: 0 1em 0 1em
+	
+}
+
+.cv-blocks li{
+	border-top: 1px dotted rgb(196, 194, 194);
+	padding: 0 1em 0 1em;
+}
+
+.cv-blocks .first-item {
+	border-top: none;
+}
+
+.two-columns .right-column	{
+	float: left;
+	text-align: right;
+	padding: 0.25em;
+	width: 25%;
+	vertical-align: baseline;
+}
+
+.two-columns .left-column	{
+	float: left;
+	text-align: center;
+	padding: 0.25em;
+	width:75%;
+	vertical-align: baseline;
+}
+
+.column-row:after	{
+	content: "";
+  	display: table;
+  	clear: both;
+}
+
+.left-column	{
+	float: left;
+	text-align: center;
+	padding: 0.25em;
+	width: 40%;	
+	vertical-align: baseline;
+}
+.middle-column	{
+	text-align: center;
+	float: left;
+	padding: 0.25em;
+	width: 40%;
+	vertical-align: baseline;
+}
+.right-column	{
+	text-align: center;
+	float: right;
+	padding: 0.25em;
+	width: 20%;	
+	vertical-align: baseline;
+}
+/*@media screen and (max-width:540px) {
+	.cv-blocks h3 {
+		font-size: 0.75em;
+		font-weight: 600;
+    	letter-spacing: 0.2em;
+	}
+	.cv-blocks	{
+		font-size: 0.7em;
+	}
+} */
+
+@media screen and (max-width: 736px) {
+
+	.cv-blocks div {
+		padding: 0.5em 0 0.5em 0 ;
+		background-color: transparent !important;
+		width: 100%;
+	}
+
+	.cv-blocks div:first-child {
+		border-top: 0;
+	}
+
+	.box.alt.inner	{
+		width: 100%;
+
+	}
+
+	.cv-blocks h3	{
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+		border-bottom: 1px double #00ffcc;
+		text-align: center;
+		margin: 0.5 0.5em 2em 0.5em
+	}
+
+	.cv-blocks ul	{
+		text-align: center;
+		list-style: none;
+		padding: 0 0.75em 0 0.75em;
+		
+	}
+	
+	.cv-blocks li{
+		border-top: 1px dotted rgb(196, 194, 194);
+		padding: 0 0 0 0;
+	}
+
+	.wrapper.style2.special.cv-section	{
+		padding: 0 0 0 0;
+		border: none;
+		border-radius: 0;
+	}
+
+	.cv-blocks.row.uniform.\35 0\25 {
+		border: none;
+		border-radius: 0;
+		margin: 0 0 0 0;
+		padding: 0 0.25em 0 0.25em;
+	}
+}
+/* End about me rules*/

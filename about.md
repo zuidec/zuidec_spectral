@@ -40,3 +40,126 @@ image: hobo_grove_cedar.jpg
 		</ul>
 	</div>
 </section>
+<section class="wrapper style2 special cv-section">
+	<div class="box alt inner">
+		<div class="row uniform 50% cv-blocks">
+			<div class="6u">
+				<span class="cv-blocks image fit">
+					<h3 class="major cv-blocks">Education</h3>
+					<ul>
+						<li class="first-item">
+							<div class="column-row two-columns">
+								<div class="left-column">
+								M.D., University of Washington School of Medicine
+								</div>
+								<div class="right-column">
+								<i>2022-Current</i>
+								</div>
+							</div>
+						</li>
+						<li>	
+							<div class="column-row two-columns">
+								<div class="left-column">
+								B.S. Biology, University of Idaho
+								</div>
+								<div class="right-column">
+								<i>2020</i>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</span>
+			</div>
+			<div class="6u">
+				<span class="cv-blocks image fit">
+					<h3 class="major cv-blocks">Skills</h3>
+					<ul >
+						<li class="first-item">Lorem ipsum</li>
+						<li>dolor lorem</li>
+					</ul>
+				</span>
+			</div>
+			<div class="12u">
+				<span class="cv-blocks image fit">
+					<h3 class="major cv-blocks">Professional Experience</h3>
+					<ul >
+						<li class="first-item">
+							<div class="column-row">
+								<div class="left-column">
+									<b>Scribe</b>
+								</div>
+								<div class="middle-column">
+									Gritman Internal Medicine
+								</div>
+								<div class="right-column">
+									<i>(2021-2022)</i>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="column-row">
+								<div class="left-column">
+									<b>Phlebotomist</b>
+								</div>
+								<div class="middle-column">
+									Gritman Internal Medicine
+								</div>
+								<div class="right-column">
+									<i>(2020-2022)</i>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="column-row">
+								<div class="left-column">
+									<b>Emergency Medical Technician</b>
+								</div>
+								<div class="middle-column">
+									Moscow Volunteer Ambulance Company
+								</div>
+								<div class="right-column">
+									<i>(2018-2021)</i>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="column-row">
+								<div class="left-column">
+									<b>Combat Medic</b>
+								</div>
+								<div class="middle-column">
+									US Army Reserve
+								</div>
+								<div class="right-column">
+									<i>(2018-2019)</i>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="column-row">
+								<div class="left-column">
+									<b>Flight Engineer</b>
+								</div>
+								<div class="middle-column">
+									US Army
+								</div>
+								<div class="right-column">
+									<i>(2011-2017)</i>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</span>
+			</div>
+			<div class="4u">
+				<span class="cv-blocks image fit">
+					<h3 class="major cv-blocks">Publications and Awards</h3>
+					<ul >
+						<li class="first-item">Lorem ipsum</li>
+						<li>dolor lorem</li>
+					</ul>
+				</span>
+			</div>
+		</div>
+	</div>	
+</section>
