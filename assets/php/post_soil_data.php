@@ -9,15 +9,8 @@
 date_default_timezone_set("America/Los_Angeles");		// Set timezone to PST
 
 // Set up database parameters
-$servername = "127.0.0.1";
-$username = "casetoph_soil_monitor";
-$password = "Jonagu25!!";
-$dbname = "casetoph_soil_data";
-
-
-// Keep this API Key value to be compatible with the ESP32 code provided in the project page.
-// If you change this value, the ESP32 sketch needs to match
-$api_key_value = "tPmAT5Ab3j7F9";
+include '../../../keys/database-credentials.php';
+include '../../../keys/api-key.php';
 
 $api_key= "";
 $moisture_level= "";

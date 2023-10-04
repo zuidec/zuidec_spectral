@@ -10,7 +10,7 @@ date_default_timezone_set("America/Los_Angeles");		// Set timezone to PST
 
 // Email that the message will be sent to
 $destinationemail ="case@casetopher.me";
-$siteemail = "donotreply@75.87.252.144";
+$siteemail = "donotreply@casetopher.me";
 
 // Grab all the form data
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -24,23 +24,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $subject = test_input($_POST["subject"]);
     $message = test_input($_POST["message"]);
     
-    echo($captcha . "\r\n");
-    echo($contactname . "\r\n");
-    echo($contactemail . "\r\n");
-    echo($emailcopy . "\r\n");
-    echo($subject . "\r\n");
-    echo($message . "\r\n");
+    //echo($captcha . "\r\n");
+    //echo($contactname . "\r\n");
+    //echo($contactemail . "\r\n");
+    //echo($emailcopy . "\r\n");
+    //echo($subject . "\r\n");
+    //echo($message . "\r\n");
     $header = "From: $siteemail \r\n";
     $header .="Reply-to: $contactemail \r\n";
-    if(mail($destinationemail, $subject,  $message,  $header)){
+    if(mail($destinationemail, "Sent from $contactemail: \n $subject",  $message,  $header)){
         echo ("Message sent successfully!");
         $status = "Success";
     }
 
     if($emailcopy="on")    {
-        mail($contactemail, $subject, $message, $header);
+        mail($contactemail, "Copy of: $subject \r\n", $message, $header);
     }
-    header("Location: ../../contact.html");
+    //header("Location: ../../contact.html");
     exit();
 }
 else {

@@ -9,12 +9,8 @@
 // Turn on errors
 ini_set('display_errors', 1);
 header('Content-Type: application/json');
+include '../../../keys/database-credentials.php';
 
-// Set up database parameters
-$DB_HOST = "127.0.0.1";
-$DB_USERNAME = "casetoph_soil_monitor";
-$DB_PASSWORD = "Jonagu25!!";
-$DB_NAME = "casetoph_soil_data";
 // Create new sql object with database information
 $mysqli = new mysqli($DB_HOST, $DB_USERNAME, $DB_PASSWORD, $DB_NAME);
 
