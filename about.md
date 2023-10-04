@@ -72,7 +72,7 @@ image: hobo_grove_cedar.jpg
 			</div>
 			<div class="6u">
 				<span class="cv-blocks image fit">
-					<h3 class="major cv-blocks">Skills</h3>
+					<h3 class="major cv-blocks">Publications and Awards</h3>
 					<ul >
 						<li class="first-item">Lorem ipsum</li>
 						<li>dolor lorem</li>
@@ -151,9 +151,9 @@ image: hobo_grove_cedar.jpg
 					</ul>
 				</span>
 			</div>
-			<div class="4u">
+			<div class="12u">
 				<span class="cv-blocks image fit">
-					<h3 class="major cv-blocks">Publications and Awards</h3>
+					<h3 class="major cv-blocks">Skills</h3>
 					<ul >
 						<li class="first-item">Lorem ipsum</li>
 						<li>dolor lorem</li>
