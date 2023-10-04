@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		$plantname = test_input($_POST["plantname"]);
         
         // Create connection
-        $conn = new mysqli($servername, $username, $password, $dbname);
+        $conn = new mysqli($DB_HOST, $DB_USERNAME, $DB_PASSWORD, $DB_NAME);
         // Check connection
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
