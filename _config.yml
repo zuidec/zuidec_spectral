@@ -30,3 +30,6 @@ markdown: kramdown
 exclude: 
   - start-server
   - spectral_jekyll_theme.gemspec
+  - database-credentials.php
+  - api-key.php
+  - build-copy
