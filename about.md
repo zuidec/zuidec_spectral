@@ -155,8 +155,8 @@ image: hobo_grove_cedar.jpg
 				<span class="cv-blocks image fit">
 					<h3 class="major cv-blocks">Skills</h3>
 					<ul >
-						<li class="first-item">Lorem ipsum</li>
-						<li>dolor lorem</li>
+						<li class="first-item">C and C++ programming</li>
+						<li>Linux operating systems</li>
 					</ul>
 				</span>
 			</div>
