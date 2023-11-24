@@ -1,4 +1,4 @@
-# Site settings
+# /Site settings
 title: Case Zuiderveld
 email: case@casetopher.me
 description: The Jekyll version of the Spectral theme by HTML5 UP.
@@ -33,3 +33,4 @@ exclude:
   - database-credentials.php
   - api-key.php
   - build-copy
+  - elements.md
