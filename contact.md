@@ -2,6 +2,7 @@
 layout: page-noformatting
 title: Contact me
 description:
+image: antique-typewriter.jpg
 ---
 
 
