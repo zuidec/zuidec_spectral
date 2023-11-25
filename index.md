@@ -6,7 +6,7 @@ description: page
 ---
 
 {% capture section-one-header %}
-<p>Welcome to my website, <br> it's still under construction</p>
+<p>Welcome to my website!</p>
 {% endcapture %}
 
 {% capture section-one-content %}
