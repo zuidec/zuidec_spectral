@@ -1,7 +1,7 @@
 ---
 layout: page-noformatting
 title: Contact me
-description:
+description: Send me an email or contact me on another platform
 image: antique-typewriter.jpg
 ---
 
