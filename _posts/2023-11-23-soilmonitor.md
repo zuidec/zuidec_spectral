@@ -24,10 +24,11 @@ Li-ion cells. I'd like to explore using only one cell and incorporating solar
 charging as well, but I need some time to source the components.
 
 <div class="image center" style="text-align:center;">
-    <img src="/assets/images/soil_monitor/arduino.jpg" width="70%" style="transform:rotate(270deg); " alt="" />
+    <img src="/assets/images/soil_monitor/arduino.jpg" width="60%" style="transform:rotate(270deg); " alt="" />
 </div>
 
-# Update 6/2/2024:
+
+## Update 6/2/2024:
 
 After some research, I decided to order some RT9167 3.3v regulators as they
 looked like they would be pretty efficient and would be a direct drop-in
@@ -36,10 +37,15 @@ of this regulator, I was able to swap over to using a single 21700 cell and 3d
 printed an enclosure for it. I have yet to run a full battery out, but so far
 it looks to be working well!
 
-<div class="image center" style="text-align:center;">
-    <img src="/assets/images/soil_monitor/arduino_v2_1.jpg" width="70%" style="transform:rotate(270deg); " alt="" />
-    <img src="/assets/images/soil_monitor/arduino_v2_2.jpg" width="70%" style="transform:rotate(270deg); " alt="" />
+<div class="image center">
+    <div class="image left" style="text-align:center;">
+        <img src="/assets/images/soil_monitor/arduino_v2_1.jpg" width="45%"  alt="" />
+    </div>
+    <div class="image right" style="text-align:center;">
+        <img src="/assets/images/soil_monitor/arduino_v2_2.jpg" width="45%"  alt="" />
+    </div>
 </div>
+
 _______________________________________________________________________________
 
 <div markdown="1" style="text-align: center;">

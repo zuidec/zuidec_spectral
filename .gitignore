@@ -11,3 +11,4 @@ update-live
 database-credentials.php
 api-key.php
 config
+.ruby-version
