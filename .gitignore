@@ -7,5 +7,7 @@ Gemfile.lock
 start-server
 *.tar
 build-copy
+update-live
 database-credentials.php
 api-key.php
+config

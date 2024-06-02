@@ -34,3 +34,4 @@ exclude:
   - api-key.php
   - build-copy
   - elements.md
+  - update-live
