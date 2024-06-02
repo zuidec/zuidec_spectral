@@ -30,7 +30,7 @@ charging as well, but I need some time to source the components.
 
 ## Update 6/2/2024:
 
-After some research, I decided to order some RT9167 3.3v regulators as they
+After some research, I decided to order some RT9167 3.3v regulators, as they
 looked like they would be pretty efficient and would be a direct drop-in
 replacement for the original regulator on the 3.3 Pro Mini. With the addition
 of this regulator, I was able to swap over to using a single 21700 cell and 3d
